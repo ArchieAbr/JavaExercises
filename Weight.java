@@ -9,10 +9,14 @@ public class Weight {
 
         double weightKilos = input.nextDouble();
 
-        double weightPounds = weightKilos * (2.205/1.0);
+        double weightPoundsTemp = weightKilos * (2.205/1.0);
 
-        System.out.printf("%.1f kg = %1f Ibs\n",
-            weightKilos, weightPounds);
+        double weightOunces = weightPoundsTemp % 1 * 16;
+
+        int weightPounds = (int) weightPoundsTemp;
+
+        System.out.printf("%.1f kg = %s Ibs %.1f oz \n",
+            weightKilos, weightPounds, weightOunces);
 
     }
 }
