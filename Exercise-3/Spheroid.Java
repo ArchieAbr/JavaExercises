@@ -33,11 +33,11 @@ public class Spheroid {
             c = input2.nextDouble();
         }
 
-        if(c > a){
+        while(c > a){
 
-            System.out.print("Error: equatorial radius must be larger than polar radius");
+            System.out.print("Error: equatorial radius must be larger than polar radius: ");
 
-            System.exit(1);
+            c = input2.nextDouble();
         }
 
         //variable manipulation for calcs
