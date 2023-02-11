@@ -26,6 +26,9 @@ public class Spheroid {
 
         double eccentricitySqrt = Math.sqrt(eccentricity);
 
+        //test
+        System.out.printf("%.3f Eccentricity = ", eccentricitySqrt);
+
 
     }
 }
