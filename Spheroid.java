@@ -4,13 +4,13 @@ import java.lang.Math;
 
 public class Spheroid {
     public static void main (String[] args){
-        System.out.print("Please enter equatorial radius in kilometers: ");
+        System.out.print("Please enter equatorial radius in kilometres: ");
 
         Scanner input1 = new Scanner(System.in);
 
         double a = input1.nextDouble();
 
-        System.out.print("Please enter polar radius in kilometers: ");
+        System.out.print("Please enter polar radius in kilometres: ");
 
         Scanner input2 = new Scanner(System.in);
 
