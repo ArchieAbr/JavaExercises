@@ -21,14 +21,17 @@ public class Spheroid {
 
         double aSquared = a * a;
 
-        //Calcs
+        //Calcs1
         double eccentricity = 1 - (cSquared / aSquared);
 
         double eccentricitySqrt = Math.sqrt(eccentricity);
 
-        //test
-        System.out.printf(" Eccentricity = %.3f ", eccentricitySqrt);
+        //Calcs2
 
+        double volume = (4 * Math.PI * aSquared * c) / 3;
+        
+        //formatted output
+        System.out.printf(" Eccentricity = %.3f\n Volume = %g cubic km ", eccentricitySqrt, volume);
 
     }
 }
